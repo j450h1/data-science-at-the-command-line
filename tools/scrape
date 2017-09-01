@@ -56,7 +56,7 @@ def main():
             else:
                 text = e.get(args.argument)
             if text is not None:
-                sys.stdout.write(text + "\n")
+                sys.stdout.write(text.decode() + "\n")
             sys.stdout.flush()
         except IOError:
             pass
